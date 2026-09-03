@@ -4,6 +4,23 @@
   "description": "De-AI writing package with the general Sepia router plus four separate operation entries: write, review, refactor, and recreate.",
   "skills": "./skills/",
   "license": "MIT",
+  "author": {
+    "name": "Nanako0129"
+  },
+  "interface": {
+    "displayName": "Sepia",
+    "shortDescription": "Review and refine AI-generated writing.",
+    "longDescription": "Use the Sepia router and its write, review, refactor, and recreate workflows for fiction and professional prose.",
+    "developerName": "Nanako0129",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Sepia to review this draft."
+    ]
+  },
   "repository": "https://github.com/Nanako0129/sepia",
   "homepage": "https://github.com/Nanako0129/sepia"
 }
