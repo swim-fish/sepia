@@ -1,7 +1,7 @@
 {
   "name": "sepia",
-  "version": "0.7.0",
-  "description": "De-AI writing package with the general Sepia router plus four separate operation entries: write, review, refactor, and recreate.",
+  "version": "0.7.1",
+  "description": "De-AI writing package with the Sepia router, four editorial operations, and an explicitly selected Hemingway voice entry.",
   "skills": "./skills/",
   "license": "MIT",
   "author": {
@@ -10,7 +10,7 @@
   "interface": {
     "displayName": "Sepia",
     "shortDescription": "Review and refine AI-generated writing.",
-    "longDescription": "Use the Sepia router and its write, review, refactor, and recreate workflows for fiction and professional prose.",
+    "longDescription": "Use the Sepia router and its write, review, refactor, and recreate workflows for fiction and professional prose. Select the Hemingway voice explicitly when desired.",
     "developerName": "Nanako0129",
     "category": "Productivity",
     "capabilities": [

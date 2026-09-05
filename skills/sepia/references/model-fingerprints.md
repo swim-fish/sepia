@@ -3,11 +3,24 @@
 Two layers, two kinds of evidence, kept in separate tables:
 
 - **Narrative layer (measured).** Each frontier model diverges from the *other AIs* on its own signature features (StoryScope §5, Table 17; 6-way attribution 68.4% macro-F1 from narrative features alone). See [StoryScope arXiv v6](https://arxiv.org/abs/2604.03136v6) for the pinned study. Measured on specific versions (Sonnet 4.6, GPT-5.4, Gemini 3 Flash, DeepSeek V3.2, Kimi K2.5, 2026). Fiction only.
-- **Prose layer (vendor guidance, unmeasured).** What a model's own vendor says its current release does at the sentence level, taken from the vendor's prompting documentation. Tagged with the exact release the page names. Loaded on every route at the style-pass step only — never before the narrative and discourse passes — and written by the vendors for user-facing expository output: on the fiction route it applies to the non-narrative text an operation produces (the report, a summary for the user), and reaches narration only where a table's own scope note says so; otherwise `narrative-pass.md` §5 and the narrative layer govern narration.
+- **Prose layer (vendor guidance, unmeasured).** What a model's own vendor says its current release does at the sentence level, taken from the vendor's prompting documentation. Tagged with the exact release the page names. When the optional model-context route is selected, load at the style-pass step only — never before the narrative and discourse passes — and written by the vendors for user-facing expository output: on the fiction route it applies to the non-narrative text an operation produces (the report, a summary for the user), and reaches narration only where a table's own scope note says so; otherwise `narrative-pass.md` §5 and the narrative layer govern narration.
 
 Stable source identities live in the repository research ledger; single-letter aliases in this file are file-local: S = StoryScope, V = vendor guidance. Corrections are Sepia inferences unless a source explicitly tested the intervention.
 
-**Which rows apply is decided by the model-identity rule in `SKILL.md` (Routing), not here.** In short: each role (author, executor) is resolved on its own; a role's family selects its narrative layer as priors when that role's model produced or is producing the story, and its prose layer on every route — a table is *operative* only when the release matches its tag, a *prior* otherwise, so a role with a matching table has that one operative and the family's other tables as priors. Nothing in this file infers a model from the prose — attribution by reading is not the classifier that produced the 68.4%.
+## Optional use and version matching
+
+Load this reference only for an explicit model-specific analysis or to investigate
+an observed defect that known model context helps explain. It is not a prerequisite
+for writing or editing. Determine author/executor identities only from user-provided
+information or trusted metadata. Unknown identities load no tables and require no
+extra user question or status report.
+
+For the selected role, a table is operative only for its named release or explicitly
+scoped series. Other versions provide historical priors to check against the actual
+text, not automatic diagnoses or mandatory corrections. Never infer authorship from
+prose; reading is not the trained classifier. Report identity and applicability only
+when they matter to the finding. Historical vendor guidance does not override the
+user's current requested voice, format, or preservation constraints.
 
 ## Claude
 
