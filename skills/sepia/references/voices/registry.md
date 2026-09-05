@@ -1,6 +1,9 @@
 # Voice registry — the voice-fit line and opt-in triggers
 
-Loaded on every fiction operation for the Opt-in section; the `Voice fit:` line is produced only on review and on refactor stage 1 (never on write or recreate). Not loaded on professional routes in this version (the professional-route suggestion is tracked in issue #227). This file is the single home of the voice-fit mechanism and of the per-profile data it reads, and it lists each profile's opt-in triggers. It contains no voice moves and no style rules; a profile body loads only when the user opts in.
+Load for an explicit voice request or an optional suggestion supported by an
+existing fiction review/refactor. The `Voice fit:` line is not required for an
+ordinary edit or an empty report. This registry contains profile selection rules,
+not voice moves; a profile body loads only after the user selects that voice.
 
 ## The rule
 
@@ -18,7 +21,7 @@ A profile body loads when any of its triggers is met. Every trigger is an explic
 
 - Body: `references/voices/hemingway.md`
 - Opt-in phrase: `apply the Hemingway voice`
-- Intent triggers (fiction route only): the user asks for strong, aggressive, or maximal de-AI on a story, or asks that it read as human as possible — for example "strong de-AI", "make this read as human as you can", 「去 AI 味要重」「盡量像人寫的」. On a professional route these requests do not load the profile; its professional section is available only by the exact phrase.
+- Intent triggers: explicit requests for the Hemingway voice or Hemingway manner, including equivalent wording in the user's language. Requests such as "strong de-AI", "make this read as human as you can", 「去 AI 味要重」, or 「盡量像人寫的」 do not select this profile by themselves.
 - Entry: `sepia-hemingway` (fiction write or refactor with the profile declared).
 
 Fiction signature (5 rubric rows, verbatim headings; ≥3 recorded → suggest):
