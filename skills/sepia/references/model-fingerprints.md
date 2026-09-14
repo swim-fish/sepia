@@ -106,7 +106,7 @@ Consulted with no prose-layer statement (2026-09-03): the Claude Sonnet 5 page s
 |---|---|
 | More concise by default than GPT-5.5; brevity instructions can make answers too brief | Density fails in both directions. In non-narrative text, a short answer that dropped a required caveat or the next action is a defect (professional-pass check 2) |
 | The vendor's recommended trims name the expected residue: introductions, repetition, generic reassurance, optional background, generic praise, sign-offs | Already hunted by professional-pass checks 1, 2, and 7; run them on non-narrative text at the role's operative or prior strength |
-| Editing tasks drift: the vendor's preservation snippet warns against "adding new claims, sections, or a more promotional tone" | Vendor-implied, not stated as a defect. Enforce the register-drift clause of the `SKILL.md` guardrail "Deletion beats addition" |
+| Editing tasks drift: the vendor's preservation snippet warns against "adding new claims, sections, or a more promotional tone" | Vendor-implied, not stated as a defect. Enforce the register-drift clause of the `SKILL.md` guardrail "Prefer the smallest effective edit" |
 
 ### Prose layer (V; GPT-6 Astra, `OPENAI-GPT-6-ASTRA-PROMPTING`)
 
